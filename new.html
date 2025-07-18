@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid box">
+        <div class="top">
+            <h1 id="heading" class="yellow">Typing Speed Test</h1>
+            <div class="time-select-box">
+                <select id="timeSelect">
+                    <option value="30">30 seconds</option>
+                    <option value="60">1 minute</option>
+                    <option value="180">3 minutes</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-block if">
+                <div id="timeName" class="stat-name yellow if">Time</div>
+                <div id="time" class="details if">30</div>
+            </div>
+            <div class="stat-block if">
+                <div id="cwName" class="stat-name yellow if">CW</div>
+                <div id="cw" class="details if">0</div>
+            </div>
+        </div>
+
+        <div class="text-display" id="textDisplay"></div>
+
+        <div class="input-area">
+            <textarea rows="1" class="text-input" id="textInput" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+        </div>
+
+        <div class="score-display" id="scoreDisplay"></div>
+
+        <div class="restart-button">
+            <a id="restartBtn" class="current" href="#">Restart</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

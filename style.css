@@ -1,0 +1,148 @@
+* {
+    justify-content: center;
+}
+html {
+    background: #212121;
+}
+body {
+    font-family: 'Source Code Pro', monospace;
+    background: #212121;
+    color: #52575d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+a {
+    color: #52575d;
+}
+.yellow {
+    color: #a928ee;
+}
+.correct {
+    color: #29bb89;
+}
+.wrong {
+    color: #e84545;
+    text-decoration: underline;
+}
+.current {
+    color: #eeeeee;
+}
+.center {
+    text-align: center;
+}
+.if {
+    display: inline-flex;
+}
+.box {
+    max-width: 900px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#heading {
+    margin-top: 30px;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+.time-select-box {
+    position: absolute;
+    left: 40px;
+    top: 60px;
+}
+.time-select-box select {
+    background: #212121;
+    color: #eeeeee;
+    border: 2px solid #52575d;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 20px;
+}
+.stats {
+    margin: 10px 0;
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.details {
+    font-size: 3rem;
+}
+.stat-block {
+    padding: 0 15px;
+    min-width: 100px;
+}
+@media(max-width: 7e00px) {
+    .details {
+        font-size: 5rem;
+    }
+    .stat-block {
+        min-width: 0;
+    }
+}
+.stat-name {
+    font-size: 1rem;
+    position: relative;
+    top: 15px;
+    right: 5px;
+}
+.text-display {
+    margin: 20px 0;
+    font-size: 28px;
+    text-align: center;
+    min-height: 200px;
+    width: 100%;
+}
+input:focus, textarea:focus, select:focus, a:focus {
+    outline: 0;
+}
+a:focus, a:hover {
+    color: #ffd369;
+    text-decoration: none;
+}
+.restart-button {
+    padding: 10px;
+    margin-top: 20px;
+}
+#restartBtn {
+    background: #a928ee;
+    color: #212121;
+    padding: 10px 10px;
+    border: 2px solid #52575d;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Source Code Pro', monospace;
+    transition: background 0.3s, color 0.3s;
+}
+#restartBtn:hover, #restartBtn:focus {
+    background: #eeeeee;
+    color: #212121;
+}
+textarea {
+    background: #212121;
+    border: solid #52575d;
+    border-width: 2px;
+    border-radius: 10px;
+    color: #eeeeee;
+    padding: 15px;
+    font-size: 1.2rem;
+    resize: none;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 30px;
+    overflow: hidden;
+}
+.score-display {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #a928ee;
+    text-align: center;
+}
